@@ -266,23 +266,58 @@
 // const result = bio(person);
 // console.log(result);
 
-const person = {
-  name: "Prakash",
-  add: "Harrison",
-  age: 23,
-};
-const parent = {
-  dad: "Harry",
-  mom: "marry",
-};
-const newObject = { ...person, ...parent };
-console.log(newObject);
+// const person = {
+//   name: "Prakash",
+//   add: "Harrison",
+//   age: 23,
+// };
+// const parent = {
+//   dad: "Harry",
+//   mom: "marry",
+// };
+// const newObject = { ...person, ...parent };
+// console.log(newObject);
 
-// #############object to array###############
-const keyArg = Object.keys(newObject);
-const KeyVal = Object.values(newObject);
-console.log(keyArg, KeyVal);
+// // #############object to array###############
+// const keyArg = Object.keys(newObject);
+// const KeyVal = Object.values(newObject);
+// console.log(keyArg, KeyVal);
 
-for (const item in newObject) {
-  console.log(newObject[item]);
-}
+// for (const item in newObject) {
+//   console.log(newObject[item]);
+// }
+
+//
+// ############## challenges 1:
+// create a function that takes food name and expire date and return
+// like "xyz is expired" or "5 more days left to use before it expires"
+
+// const checkExpiry = ({ name, expire }) => {
+// check the expire and return message
+//   const dateCheck = Date.now();
+//   const fts = new Date(expire).getTime();
+//   if (dateCheck < fts) {
+//     return ` ${name} is not expired`;
+//   } else {
+//     return `${name}it is expired`;
+//   }
+// };
+// const bio = (personObj) => {
+//   return `Hi there my name is ${personObj.name} I live in ${personObj.add} and Im ${personObj.age} years old`;
+// };
+
+// expired
+// const bread = {
+//   name: "A-one",
+//   expired: "2023-07-05",
+// };
+
+// not expired
+// const egg = {
+//   name: "Woolworths",
+//   expire: "2023-07-22",
+// };
+// const result1 = checkExpiry(bread);
+// const result2 = checkExpiry(egg);
+// console.log(result1);
+// console.log(result2);
